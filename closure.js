@@ -11,5 +11,7 @@ const createLifeCounter=()=>{
     }
 }
 const rahimLifeUpdate=createLifeCounter();
+const karimLifeUpdate=createLifeCounter();
 console.log(rahimLifeUpdate());
 console.log(rahimLifeUpdate())
+console.log(karimLifeUpdate())
