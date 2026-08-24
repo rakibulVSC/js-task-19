@@ -11,13 +11,40 @@
 // console.log(applyDiscout(productPrices,10))
 
 
-let applyDiscountAmount=(pricas,discountable=0)=>{
-    let discountAmount=pricas.map((elem,ind,arr)=>{
-        // console.log(elem,ind)
-        const discountabl=elem-(elem*5/100);
-        return discountabl;
+// let applyDiscountAmount=(pricas,discountable=0)=>{
+//     let discountAmount=pricas.map((elem,ind,arr)=>{
+//         // console.log(elem,ind)
+//         const discountabl=elem-(elem*5/100);
+//         return discountabl;
+//     })
+//     return discountAmount;
+// }
+// let pricesProduct=[100,200,300,400,500];
+// console.log(applyDiscountAmount(pricesProduct,5));
+
+
+
+
+
+
+
+let getPassingStudent=(students,threshold)=>{
+    let filerStudent=students.filter(student=>{
+        // console.log(student);
+        if(student.marks>=threshold){
+            return true;
+        }
+        else{
+            return false;
+        }
+        
     })
-    return discountAmount;
+    return filerStudent;
+    
 }
-let pricesProduct=[100,200,300,400,500];
-console.log(applyDiscountAmount(pricesProduct,5))
+let students=[
+    {name:"rafi",marks:75},
+    {name:"karim",marks:40},
+    {name:"uthso",marks:60}
+]
+console.log(getPassingStudent(students,50))
